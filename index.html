@@ -152,7 +152,7 @@ textarea{
 .cards{
     display:flex;
     gap:20px;
-    margin-left: 20%;
+    margin-left: 10%;
     flex-wrap:wrap;
     justify-content:center
 }
@@ -188,6 +188,22 @@ textarea{
   box-shadow: 0 8px 20px rgba(123, 76, 255, 0.3);
     
 }
+.card3{
+    background:#745988;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    width:280px;
+      padding: 14px 32px;
+  font-size: 1.1rem;
+  margin-right: 20px;
+  margin-left: -20px;
+  border: none;
+  color: white;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(123, 76, 255, 0.3);
+    
+}
 .card:hover{
     transform:translateY(-8px)
 }
@@ -201,6 +217,15 @@ textarea{
     transform:translateY(-8px)
 }
 .card2 img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px
+}
+.card3:hover{
+    transform:translateY(-8px)
+}
+.card3 img{
     width:100%;
     height:180px;
     object-fit:cover;
@@ -278,7 +303,11 @@ textarea{
 <div class="card2">
         <a href="https://izzahali41219-cmd.github.io/modern-portfolio-website/" target="_blank">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxN_oTQeZLMfRz_EyOsLIblxw-MmmbE5y_wbVFgvKCw&s=10" alt="GitHub" width="200">
-</a><h2> PROJECT NO 2</h2><p><i>BLUE DAYLIGHT</i> <br>Offical web</div></a>
+</a><h2> PROJECT NO 2</h2><p><i>BLUE DAYLIGHT</i> <br>Offical web</div></a></div>
+    <div class="card3">
+        <a href="https://izzahali41219-cmd.github.io/the-jeweler/" target="_blank">
+    <img src="https://cdn.dribbble.com/userupload/21556164/file/original-1db6c10ca2920131bf30dbfc99e810da.gif" alt="GitHub" width="200">
+</a><h2> PROJECT NO 3</h2><p><i>THE JEWELR</i> <br>Offical web</div></a>
     </div></div>
     <section>
     <div align="center" class="box">
@@ -308,6 +337,7 @@ function changeStyle() {
         document.querySelector(".header").style.backgroundColor = "#5C93AA";
         document.querySelector(".card").style.backgroundColor = "#84AABC";
         document.querySelector(".card2").style.backgroundColor = "#84AABC";
+        document.querySelector(".card3").style.backgroundColor = "#84AABC";
         document.querySelector("hr").style.backgroundColor = "#B8DAED";
         document.querySelector(".box").style.backgroundColor = "rgb(133, 191, 207)";
         document.querySelector(".button2").style.backgroundColor = "#84AABC";
@@ -331,6 +361,7 @@ function changeStyle() {
         document.querySelector(".header").style.backgroundColor = "#704d89";
         document.querySelector(".card").style.backgroundColor = "#745988";   
         document.querySelector(".card2").style.backgroundColor = "#745988";   
+        document.querySelector(".card3").style.backgroundColor = "#745988"; 
         document.querySelector(".page").style.backgroundImage =
             "url('https://i.pinimg.com/originals/a3/9b/66/a39b666e8432df8033c05559e61569b7.gif')";
         document.querySelector(".box").style.backgroundColor = "#826893";
