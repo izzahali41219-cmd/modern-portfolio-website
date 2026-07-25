@@ -32,9 +32,9 @@
     h1 {
         font-size: 30px;
     }
- .card, .card2 {
+ .card, .card2, .card3, .card4{
         flex-direction: column;
-       
+       margin-left: -20px;
         align-items: center;
     }
 
@@ -164,8 +164,8 @@ textarea{
     width:280px;
     padding: 14px 32px;
   font-size: 1.1rem;
-  margin-right: 20px;
-    margin-left: -20px;
+  margin-right: 30px;
+    margin-left: 70px;
   border: none;
   color: white;
   transition: all 0.4s ease;
@@ -180,8 +180,8 @@ textarea{
     width:280px;
       padding: 14px 32px;
   font-size: 1.1rem;
-  margin-right: 20px;
-  margin-left: -20px;
+  margin-right: 30px;
+  margin-left: 70px;
   border: none;
   color: white;
   transition: all 0.4s ease;
@@ -196,8 +196,24 @@ textarea{
     width:280px;
       padding: 14px 32px;
   font-size: 1.1rem;
-  margin-right: 20px;
-  margin-left: -20px;
+  margin-right: 30px;
+  margin-left: 70px;
+  border: none;
+  color: white;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(123, 76, 255, 0.3);
+    
+}
+.card4{
+    background:#745988;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    width:280px;
+    padding: 14px 32px;
+  font-size: 1.1rem;
+  margin-right: 30px;
+    margin-left: 70px;
   border: none;
   color: white;
   transition: all 0.4s ease;
@@ -231,6 +247,16 @@ textarea{
     object-fit:cover;
     border-radius:10px
 }
+
+.card4:hover{
+    transform:translateY(-8px)
+}
+.card4 img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px
+}
 #container{
     display: flex;
     gap: 30px;
@@ -250,6 +276,18 @@ textarea{
     margin-top: 5%;
     text-align: center;
 }
+.section{
+    margin-top: 35px;
+}
+footer{
+    background:#101010;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    width: 96.5%;
+    height: 10%;
+    margin-top: 15px;
+}
 .dark-mode{
     background:#A8C7D6;
 }
@@ -264,6 +302,12 @@ textarea{
 
 .dark-mode .page{
     background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxvj3SbegfYtXtDv2NAisRP_TN35RhflgqhgHbPV6aOg&s=10');
+}
+a{
+ color: white;
+      text-decoration: none;
+      font-size: 17px;
+      padding: 20px 0;
 }
 
     </style>
@@ -299,21 +343,30 @@ textarea{
     <div class="card">
         <a href="https://izzahali41219-cmd.github.io/brewtopia/" target="_blank">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSObw4Mf90PDYVBg3n_TL6WRj2uVgWfVW6ldJaOun-J0w&s=10" alt="GitHub" width="200">
-</a><h2><b>PROJECT NO 1</b></h2><p><i>...BREWTOPIA...</i> <br>Offical web</div></a>
+</a><h2><b>PROJECT NO 1</b></h2><p><i>...BREWTOPIA...</i> <br>A Fictional Bakery</div></a>
 <div class="card2">
         <a href="https://izzahali41219-cmd.github.io/modern-portfolio-website/" target="_blank">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxN_oTQeZLMfRz_EyOsLIblxw-MmmbE5y_wbVFgvKCw&s=10" alt="GitHub" width="200">
-</a><h2> PROJECT NO 2</h2><p><i>BLUE DAYLIGHT</i> <br>Offical web</div></a></div>
+</a><h2> PROJECT NO 2</h2><p><i>BLUE DAYLIGHT</i> <br>MY portfolio</div></a></div>
+    </div>
+    <section class="section">
+        <div id="container"><div class="cards">
     <div class="card3">
         <a href="https://izzahali41219-cmd.github.io/the-jeweler/" target="_blank">
     <img src="https://cdn.dribbble.com/userupload/21556164/file/original-1db6c10ca2920131bf30dbfc99e810da.gif" alt="GitHub" width="200">
-</a><h2> PROJECT NO 3</h2><p><i>THE JEWELR</i> <br>Offical web</div></a>
+</a><h2> PROJECT NO 3</h2><p><i>THE JEWELR</i> <br>AN Affilate Web of Jewllery</div></a>
+    
+<div class="card4">
+        <a href="https://izzahali41219-cmd.github.io/Iza-s/" target="_blank">
+    <img src="https://wallpapersok.com/images/hd/mint-green-sea-xumgze3bf7rf9dck.jpg" alt="GitHub" width="200">
+</a><h2> PROJECT NO 4</h2><p><i>IZA'S</i> <br>A Website for Clothing Brand</div></a>
     </div></div>
+    </section>
     <section>
     <div align="center" class="box">
     <section id="contact"><h1 align="center" style="margin-top:10%;">CONTACT ME</h1>
     <h2 align="center">✉ izzahali41219@gmail.com</h2>
-    <form action="https://formsubmit.co/izzahali41219@gmail.com" method="POST">
+    <form action="mailto:izzahail41219@gmail.com">
     <input type="text" name="name" placeholder="Your Name" required>
 
     <input type="email" name="email" placeholder="Your Email" required>
@@ -322,6 +375,10 @@ textarea{
 
     <button class="button3" type="submit">Send Message</button>
 </form>
+    </section>
+    </div></section>
+    <section>
+        <footer>☏ 03026771065 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/web_designer82010/#" align="center">@Instagram</a></footer>
     </section>
 
 </body>
@@ -338,6 +395,7 @@ function changeStyle() {
         document.querySelector(".card").style.backgroundColor = "#84AABC";
         document.querySelector(".card2").style.backgroundColor = "#84AABC";
         document.querySelector(".card3").style.backgroundColor = "#84AABC";
+        document.querySelector(".card4").style.backgroundColor = "#84AABC";
         document.querySelector("hr").style.backgroundColor = "#B8DAED";
         document.querySelector(".box").style.backgroundColor = "rgb(133, 191, 207)";
         document.querySelector(".button2").style.backgroundColor = "#84AABC";
@@ -345,7 +403,6 @@ function changeStyle() {
         document.querySelector(".button3").style.backgroundColor = "#84AABC";
         document.querySelector(".page").style.backgroundImage =
             "url('https://i.pinimg.com/originals/44/db/93/44db938c4d86a7ea3ae51a511304a117.gif')";
-
         document.getElementById("demo").innerHTML = "Welcome to my website";
         document.getElementById("logo").innerHTML = "BLUE DAYLIGHT";
         document.getElementById("subtitle").innerHTML = "Blue Daylight";
@@ -362,6 +419,7 @@ function changeStyle() {
         document.querySelector(".card").style.backgroundColor = "#745988";   
         document.querySelector(".card2").style.backgroundColor = "#745988";   
         document.querySelector(".card3").style.backgroundColor = "#745988"; 
+        document.querySelector(".card4").style.backgroundColor = "#745988"; 
         document.querySelector(".page").style.backgroundImage =
             "url('https://i.pinimg.com/originals/a3/9b/66/a39b666e8432df8033c05559e61569b7.gif')";
         document.querySelector(".box").style.backgroundColor = "#826893";
